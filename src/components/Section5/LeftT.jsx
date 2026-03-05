@@ -3,7 +3,7 @@ import { Linkedin, Instagram, Twitter, Mail, Github } from 'lucide-react'
 
 const LeftT = () => {
   return (
-    <div className='w-full md:w-1/2 rounded-2xl p-6 sm:p-10 bg-gray-900 text-white'>
+    <div className='w-full md:w-1/2 rounded-2xl p-6 sm:p-10'>
 
       <h1 className='text-2xl sm:text-3xl font-bold mb-6 text-center md:text-left'>
         Connect Me

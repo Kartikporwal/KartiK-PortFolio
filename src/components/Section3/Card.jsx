@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = ({ skills }) => {
   return (
-    <section id="Skills" className='w-full bg-gray-300 px-4 sm:px-10 md:px-20 py-16 scroll-mt-24'>
+    <section id="Skill" className='w-full bg-gray-300 px-4 sm:px-10 md:px-20 py-16 scroll-mt-24'>
   
 
       <h1 className='text-3xl sm:text-4xl font-bold text-center text-blue-500'>
@@ -18,7 +18,7 @@ const Card = ({ skills }) => {
               className='p-5 rounded-xl bg-black/40 border border-white/10'
             >
 
-              <h4 className='text-indigo-500 mb-3 font-bold text-center text-3xl'>
+              <h4 className='text-indigo-800 mb-3 font-bold text-center text-3xl'>
                 {skill.title}
               </h4>
 
