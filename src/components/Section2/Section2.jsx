@@ -1,0 +1,12 @@
+import React from 'react'
+import Page2Content from './Page2Content'
+
+const Section2 = () => {
+  return (
+    <div className=' w-full bg-gray-300 '>
+      <Page2Content />
+    </div>
+  )
+}
+
+export default Section2
