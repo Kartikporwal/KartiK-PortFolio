@@ -37,11 +37,12 @@ const Navbar = () => {
       {menuOpen && (
         <div className="md:hidden flex flex-col items-center gap-6 pb-6 text-lg font-semibold text-gray-700">
 
-          <a href="#home">Home</a>
+          <a href="#home" className="hover:text-pink-500">Home</a>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
+          <a href="#contact" className="bg-pink-500 w-full text-center font-semibold px-4 py-2">Contact Me</a>
 
         </div>
       )}
