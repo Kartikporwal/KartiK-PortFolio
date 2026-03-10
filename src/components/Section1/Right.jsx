@@ -6,7 +6,7 @@ const Right = () => {
 
       <img
         className="w-60 sm:w-72 md:w-80 lg:w-96 rounded-full object-cover shadow-lg"
-        src="https://avatars.githubusercontent.com/u/144890079?v=4"
+        src="kartik.jpg"
         alt="Kartik Porwal"
       />
 

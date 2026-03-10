@@ -6,7 +6,7 @@ import Page1Content from './Page1Content'
 
 const Section1 = () => {
   return (
-    <div className='w-full h-screen bg-gray-300'>
+    <div className='w-full'>
         <Navbar />
          
         <Page1Content />

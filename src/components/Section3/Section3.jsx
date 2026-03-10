@@ -5,7 +5,7 @@ import Card from './Card'
 
 const Section3 = ({skills}) => {
   return (
-    <div className='bg-gray-300 '>
+    <div className='w-full'>
      
       <Page3Content skills={skills}/>
     </div>

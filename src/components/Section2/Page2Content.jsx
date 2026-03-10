@@ -4,7 +4,7 @@ import About from './About'
 
 const Page2Content = () => {
   return (
-    <div className='w-full h-screen'>
+    <div className='w-full'>
      <About />
     </div>
   )

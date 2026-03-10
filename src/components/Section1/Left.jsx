@@ -11,7 +11,7 @@ const Left = () => {
         </h1>
 
         <marquee>
-         <p className='text-xl sm:text-2xl font-semibold text-pink-500 mt-4'>
+         <p className='text-xl sm:text-2xl font-semibold text-indigo-500 mt-4'>
 🚀 Aspiring Software Engineer | 💻 Full Stack Developer | ⚛️ MERN Stack Developer | 🔐 Web Authentication
 </p>
         </marquee>
