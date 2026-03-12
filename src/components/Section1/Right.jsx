@@ -5,7 +5,7 @@ const Right = () => {
     <div className='w-full md:w-1/2 flex justify-center items-center p-6 md:p-10'>
 
       <img
-        className="w-60 sm:w-72 md:w-80 lg:w-96 rounded-full object-cover shadow-lg"
+        className="w-50 sm:w-72 md:w-80 lg:w-96 rounded-full object-cover shadow-l"
         src="kartik.jpg"
         alt="Kartik Porwal"
       />
