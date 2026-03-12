@@ -25,12 +25,15 @@ const Card = ({ skills }) => {
               <div className='flex flex-wrap gap-2 bg-gray-400 border-2 border-black rounded-2xl p-10'>
 
                 {skill.items.map((item, i) => (
-                  <span
-                    key={i}
-                    className='bg-gray-900 border-2 rounded-2xl p-4 text-white'
-                  >
-                    {item}
-                  </span>
+                <span
+  key={i}
+  className="px-4 py-2 text-sm bg-white/10 backdrop-blur-md 
+  text-black rounded-full border border-white/20 
+  hover:bg-blue-500 hover:border-blue-500 
+  transition duration-300 font-semibold"
+>
+  {item}
+</span>
                 ))}
 
               </div>
