@@ -1,13 +1,11 @@
 import React from 'react'
-import Left from './Left'
-import Right from './Right'
+
+import Content from './Content'
 
 const Page1Content = () => {
   return (
-    <div className='w-full flex flex-col md:flex-row items-center justify-between py-35'>
-      <Left />
-      <Right />
-
+    <div className='w-full flex flex-col md:flex-row items-center justify-center py-15'>
+       <Content />
     </div>
   )
 }

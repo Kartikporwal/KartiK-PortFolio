@@ -10,7 +10,7 @@ const App = () => {
   const skills = [
     {
     title: "Frontend",
-    items: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "EJS", "React JS"]
+    items: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "React JS"]
   },
   {
     title: "Backend",
@@ -18,7 +18,11 @@ const App = () => {
   },
   {
     title: "Database & Tools",
-    items: ["MongoDB", "MySQL", "Git", "GitHub", "Postman","Render","Vercel"]
+    items: ["MongoDB", "MySQL"]
+  },
+  {
+    title: "Tools",
+    items: ["Git", "GitHub","VS Code", "Postman"]
   }
 ]
    const projects = [
