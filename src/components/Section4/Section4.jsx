@@ -3,7 +3,7 @@ import Page4Content from './Page4Content'
 
 const Section4 = ({projects}) => {
   return (
-    <div className='w-full'>
+    <div className=''>
       <Page4Content projects={projects}/>
     </div>
   )

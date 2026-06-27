@@ -5,6 +5,7 @@ import Section3 from './components/Section3/Section3'
 import Section4 from './components/Section4/Section4'
 import Section5 from './components/Section5/Section5'
 
+
 const App = () => {
 
   const skills = [
@@ -30,26 +31,26 @@ const App = () => {
       title: "🚀 DevCollab – Developer Collaboration Platform",
       description:
         "Built a full-stack collaboration platform that allows developers to discover projects and contribute together. Integrated GitHub authentication and real-time discussions to improve developer collaboration.",
-      tech: "React.js | Node.js | Express.js | MongoDB | GitHub OAuth | Socket.io",
-      github: "",
+      tech: ["React.js", "Node.js", "Express.js"," MongoDB", "GitHub OAuth", "Socket.io"],
+      github: "https://github.com/Kartikporwal/DevCollab-client",
       live: ""
     },
+    {
+      title: "🎯 GoalCraft – Interview Experience Sharing Platform",
+     description: "Developed a full-stack platform where students can share interview experiences, browse company-wise interview questions, and help others prepare for placements. Implemented secure authentication, search, filtering, and role-based features for an engaging user experience.",
+    tech: ["React.js","Node.js","Express.js","MongoDB","JWT","Tailwind CSS"],
+    github: "https://github.com/DheerajRay-01/goal-craft",
+     live: ""
+},
     {
       title: "🛒 Scatch – E-Commerce Web Application",
       description:
         "Developed a full-stack e-commerce platform with secure user authentication, product management, and shopping cart functionality.",
-      tech: "Node.js | Express.js | MongoDB | EJS | Tailwind CSS",
+      tech: ["Node.js", "Express.js", "MongoDB", "EJS", "Tailwind CSS"],
       github: "https://github.com/Kartikporwal/Scatch",
       live: ""
-    },
-    {
-      title: "📝 Notes / Task Management App",
-      description:
-        "Created a task management web application that allows users to add, update, and delete tasks efficiently.",
-      tech: "Node.js | Express.js | EJS | Tailwind CSS | MongoDB",
-      github: "https://github.com/Kartikporwal/Notes",
-      live: ""
     }
+    
   ]
   return (
     <div>

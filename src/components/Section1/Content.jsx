@@ -49,13 +49,17 @@ const Content = () => {
             className='border border-gray-600 text-white px-7 py-3 rounded-xl font-semibold hover:bg-white hover:text-black transition'>
                 Contact Me
             </a>
+            <div className="flex gap-4">
 
-
-          <a
-            href=""
-            className="border border-gray-600 text-white px-7 py-3 rounded-xl font-semibold hover:bg-white hover:text-black transition">
-            Resume
-          </a>
+      <a
+    href="/KARTIK_RESUME.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition"
+  >
+    Resume
+  </a>
+        </div>
         </div>
 
         <div className='flex justify-center gap-8 mt-10 text-gray-400'>

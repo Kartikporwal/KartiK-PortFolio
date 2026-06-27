@@ -4,7 +4,7 @@ import Content from './Content'
 
 const Page1Content = () => {
   return (
-    <div className='w-full flex flex-col md:flex-row items-center justify-center py-15'>
+    <div className='w-full flex flex-col md:flex-row items-center justify-center py-25'>
        <Content />
     </div>
   )

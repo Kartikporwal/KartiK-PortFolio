@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {Menu, X} from "lucide-react" 
 
 const Navbar = () => {
 
@@ -26,9 +27,9 @@ const Navbar = () => {
         <div className="md:hidden">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="text-2xl"
+            className="text-2xl text-white"
           >
-            ☰
+           {menuOpen ? <X size={30} /> : <Menu size={30} />}
           </button>
         </div>
 
@@ -36,14 +37,57 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden flex flex-col items-center gap-6 pb-6 text-lg font-semibold text-gray-700">
+        <div className="md:hidden absolute top-20 left-4 right-4 bg-[#16161d]/95 backdrop-blur-xl border border-gray-700 rounded-2xl shadow-2xl overflow-hidden">
+          <div className="flex flex-col p-4">
+        
+              <a
+              href="#home"
+              onClick={() => setMenuOpen(false)}
+              className="px-4 py-3 rounded-xl text-gray-300 hover:bg-gray-800 hover:text-white transition"
+            >
+              🏠 Home
+            </a>
 
-          <a href="#home" className="hover:text-pink-500">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-          <a href="#contact" className="bg-pink-500 w-full text-center font-semibold px-4 py-2">Contact Me</a>
+            <a
+              href="#about"
+              onClick={() => setMenuOpen(false)}
+              className="px-4 py-3 rounded-xl text-gray-300 hover:bg-gray-800 hover:text-white transition"
+            >
+              👨‍💻 About
+            </a>
+
+            <a
+              href="#skills"
+              onClick={() => setMenuOpen(false)}
+              className="px-4 py-3 rounded-xl text-gray-300 hover:bg-gray-800 hover:text-white transition"
+            >
+              ⚡ Skills
+            </a>
+
+            <a
+              href="#projects"
+              onClick={() => setMenuOpen(false)}
+              className="px-4 py-3 rounded-xl text-gray-300 hover:bg-gray-800 hover:text-white transition"
+            >
+              🚀 Projects
+            </a>
+
+            <a
+              href="#contact"
+              onClick={() => setMenuOpen(false)}
+              className="px-4 py-3 rounded-xl text-gray-300 hover:bg-gray-800 hover:text-white transition"
+            >
+              📩 Contact
+            </a>
+
+            <a
+              href="#contact"
+              onClick={() => setMenuOpen(false)}
+              className="mt-4 text-center bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 rounded-xl font-semibold hover:scale-105 transition"
+            >
+              Contact Me
+            </a>
+        </div>
 
         </div>
       )}

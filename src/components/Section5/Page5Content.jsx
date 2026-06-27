@@ -1,23 +1,12 @@
 import React from 'react'
-import LeftT from './LeftT'
-import RightT from './RightT'
+import Contact from './Contact'
+
 
 const Page5Content = () => {
   return (
-    <section id="contact" className='w-full px-4 sm:px-10 md:px-20 py-16 scroll-mt-24'>
-
-      <h1 className='font-bold text-3xl sm:text-4xl text-center text-blue-500 mb-10'>
-        Contact 
-      </h1>
-
-      <div className='flex flex-col md:flex-row gap-10 justify-center items-start'>
-
-        <LeftT />
-        <RightT />
-
-      </div>
-
-    </section>
+     <div className='w-full'>
+       <Contact />
+     </div>
   )
 }
 
