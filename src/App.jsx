@@ -29,6 +29,7 @@ const App = () => {
    const projects = [
     {
       title: "🚀 DevCollab – Developer Collaboration Platform",
+      image: "/images/devcollab.png",
       description:
         "Built a full-stack collaboration platform that allows developers to discover projects and contribute together. Integrated GitHub authentication and real-time discussions to improve developer collaboration.",
       tech: ["React.js", "Node.js", "Express.js"," MongoDB", "GitHub OAuth", "Socket.io"],
@@ -37,6 +38,7 @@ const App = () => {
     },
     {
       title: "🎯 GoalCraft – Interview Experience Sharing Platform",
+      image: "/images/goalcraft.png",
      description: "Developed a full-stack platform where students can share interview experiences, browse company-wise interview questions, and help others prepare for placements. Implemented secure authentication, search, filtering, and role-based features for an engaging user experience.",
     tech: ["React.js","Node.js","Express.js","MongoDB","JWT","Tailwind CSS"],
     github: "https://github.com/DheerajRay-01/goal-craft",
@@ -44,8 +46,9 @@ const App = () => {
 },
     {
       title: "🛒 Scatch – E-Commerce Web Application",
+      image: "/images/scatch.png",
       description:
-        "Developed a full-stack e-commerce platform with secure user authentication, product management, and shopping cart functionality.",
+"Built a full-stack e-commerce web application featuring secure user authentication, product management, shopping cart, and order processing. Designed a responsive and user-friendly interface using EJS and Tailwind CSS, while implementing CRUD operations, session-based authentication, and MongoDB for efficient data management.",
       tech: ["Node.js", "Express.js", "MongoDB", "EJS", "Tailwind CSS"],
       github: "https://github.com/Kartikporwal/Scatch",
       live: ""

@@ -25,7 +25,7 @@ const Project = ({projects}) => {
               <div key={index}
                className='bg-[#16161d] rounded-3xl overflow-hidden hover:-translate-y-2 transition duration-300'>
 
-                
+                <img src={project.image} alt={project.title} className='w-full h-70'/>
                 <div className='p-6'>
                    <h3 className='text-2xl font-bold'>
                     {project.title}
@@ -33,7 +33,7 @@ const Project = ({projects}) => {
                    <p className='text-gray-400 mt-4'>
                     {project.description}
                    </p>
-      
+       
 
                    <div className='flex flex-wrap gap-2 mt-6'>
                     {project.tech.map((item,i) => (
