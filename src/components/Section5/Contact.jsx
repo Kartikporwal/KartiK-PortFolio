@@ -64,7 +64,7 @@ const Contact = () => {
                 <MapPin className="text-pink-500" size={28} />
                 <div>
                   <p className="text-gray-400">Location</p>
-                  <p>Nagda, Madhya Pradesh, India</p>
+                  <p>Indore, Madhya Pradesh, India</p>
                 </div>
               </div>
 
