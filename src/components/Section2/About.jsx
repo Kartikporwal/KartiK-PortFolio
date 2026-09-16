@@ -67,7 +67,7 @@ const About = () => {
               <div className="bg-[#16161d] rounded-2xl p-8 text-center hover:scale-105 transition">
               <GraduationCap className="mx-auto text-green-500" size={45} />
               <h3 className="mt-4 text-3xl font-bold">B.Tech</h3>
-              <p className="text-gray-400 mt-2">Computer Science</p>
+              <p className="text-gray-400 mt-2">Computer Science Engineering</p>
             </div>
             </div>
           </div>

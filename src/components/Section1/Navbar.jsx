@@ -8,14 +8,14 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-[#0a0a0a]/90 backdrop-blur-md borber-b border-gray-800">
 
-      <div className="max-w-7xl mx-auto flex justify-between items-center py-5 px-6">
+      <div className="max-w-7xl mx-auto flex items-center justify-around py-5 px-6">
 
         <h1 className="text-3xl font-bold">
           <span className="text-blue-500">Kartik</span>
           <span className="text-purple-500">Porwal.dev</span></h1>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-10 bg-[#17171b] px-8 py-4 rounded-full border border-gray-700">
+        <div className="hidden md:flex items-center gap-10 bg-[#17171b] px-8 py-4 rounded-full font-bold">
           <a href="#home" className="text-white hover:text-pink-400">Home</a>
           <a href="#about" className="text-white hover:text-pink-400">About</a>
           <a href="#skills" className="text-white hover:text-pink-400">Skills</a>

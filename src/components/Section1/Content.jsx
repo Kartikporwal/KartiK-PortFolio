@@ -25,7 +25,7 @@ const Content = () => {
         </h2>
 
         <p className='mt-6 text-lg text-white'>
-            React • Node.js • Express.js • MongoDB • JavaScript • Tailwind CSS
+            React.js • Node.js • Express.js • MongoDB • MySQL • JavaScript • Tailwind CSS
         </p>
 
         <p className='mt-10 text-lg text-gray-400 leading-8 max-w-3xl mx-auto'>
@@ -52,7 +52,7 @@ const Content = () => {
             <div className="flex gap-4">
 
       <a
-    href="/KARTIK_RESUME.pdf"
+    href="/Kartik Porwal.pdf"
     target="_blank"
     rel="noopener noreferrer"
     className="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition"

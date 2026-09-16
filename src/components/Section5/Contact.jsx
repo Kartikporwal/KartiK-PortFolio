@@ -40,7 +40,7 @@ const Contact = () => {
             <div className="space-y-6">
 
               <div className="flex items-center gap-5">
-                <Mail className="text-blue-500" size={28} />
+                <Mail className="text-red-700" size={28} />
                 <div>
                   <p className="text-gray-400">Email</p>
                   <a
@@ -61,7 +61,7 @@ const Contact = () => {
               </div>
 
               <div className="flex items-center gap-5">
-                <MapPin className="text-pink-500" size={28} />
+                <MapPin className="text-blue-500" size={28} />
                 <div>
                   <p className="text-gray-400">Location</p>
                   <p>Indore, Madhya Pradesh, India</p>
