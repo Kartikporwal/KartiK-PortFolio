@@ -117,20 +117,20 @@ const Contact = () => {
 
               <input
                 type="text"
-                placeholder="Your Name"
-                className="w-full bg-[#222228] border border-gray-700 rounded-xl px-5 py-4 outline-none focus:border-blue-500"
+                placeholder="Name"
+                className="w-full bg-[#222228] border border-gray-700 rounded-xl px-5 py-4 outline-none"
               />
 
               <input
                 type="email"
-                placeholder="Your Email"
-                className="w-full bg-[#222228] border border-gray-700 rounded-xl px-5 py-4 outline-none focus:border-blue-500"
+                placeholder="Email"
+                className="w-full bg-[#222228] border border-gray-700 rounded-xl px-5 py-4 outline-none"
               />
 
               <textarea
                 rows="6"
                 placeholder="Write your message..."
-                className="w-full bg-[#222228] border border-gray-700 rounded-xl px-5 py-4 outline-none focus:border-blue-500"
+                className="w-full bg-[#222228] border border-gray-700 rounded-xl px-5 py-4 outline-none"
               />
 
               <button
