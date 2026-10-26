@@ -6,7 +6,7 @@ const Project = ({ projects = [] }) => {
   return (
     <section
       id="projects"
-      className="bg-[#09090B] text-white py-24 px-6"
+      className="text-white py-24 px-6"
     >
       <div className="max-w-5xl mx-auto">
 

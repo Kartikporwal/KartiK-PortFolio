@@ -4,7 +4,7 @@ import { Code2, Rocket, Briefcase, GraduationCap} from 'lucide-react'
 const About = () => {
   return (
       <section id='about'
-      className='bg-[#09090B] text-white py-24 px-6'>
+      className='text-white py-24 px-6'>
 
         <div className='max-w-7xl mx-auto'>
 

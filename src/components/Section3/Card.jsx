@@ -4,7 +4,7 @@ import { Code2,Server, Database, Wrench } from 'lucide-react'
 const Card = ({skills}) => {
   return (
      <section id='skills'
-     className='bg-[#09090B] text-white py-24 px-6'>
+     className='text-white py-24 px-6'>
       <div className='max-w-7xl mx-auto'>
 
         <div className='text-center'>
