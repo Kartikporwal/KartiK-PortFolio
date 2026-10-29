@@ -6,8 +6,63 @@ import {
   Linkedin,
   Instagram,
 } from "lucide-react";
+import { useState } from "react";
 
 const Contact = () => {
+
+  const [formData, setFormData] = useState({
+  name: "",
+  email: "",
+  message: "",
+});
+
+const [status, setStatus] = useState("");
+const [loading, setLoading] = useState(false);
+
+const handleChange = (e) => {
+  setFormData({
+    ...formData,
+    [e.target.name]: e.target.value,
+  });
+};
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  setStatus("");
+  setLoading(true);
+
+  try {
+    const response = await fetch(
+      "http://localhost:5000/api/contact",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }
+    );
+
+    const result = await response.json();
+
+    if (!response.ok) {
+      throw new Error(result.message || "Something went wrong.");
+    }
+
+    setStatus(result.message);
+
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+  } catch (error) {
+    setStatus(error.message || "Unable to send message.");
+  } finally {
+    setLoading(false);
+  }
+};
   return (
     <section
       id="contact"
@@ -113,38 +168,57 @@ const Contact = () => {
               Send Message
             </h3>
 
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
 
-              <input
-                type="text"
-                placeholder="Name"
-                className="w-full bg-[#222228] border border-gray-700 rounded-xl px-5 py-4 outline-none"
-              />
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+              maxLength={100}
+              className="w-full bg-[#222228] border border-gray-700 rounded-xl px-5 py-4 outline-none" 
+            />
 
-              <input
-                type="email"
-                placeholder="Email"
-                className="w-full bg-[#222228] border border-gray-700 rounded-xl px-5 py-4 outline-none"
-              />
+             <input
+              type="email"
+              name="email"  
+              placeholder="Email"
+              value={formData.email}
+              onChange={handleChange}
+               required
+             maxLength={254}
+           className="w-full bg-[#222228] border border-gray-700 rounded-xl px-5 py-4 outline-none"
+            />
 
-              <textarea
-                rows="6"
-                placeholder="Write your message..."
-                className="w-full bg-[#222228] border border-gray-700 rounded-xl px-5 py-4 outline-none"
-              />
+           <textarea
+            name="message"
+            rows="6"
+            placeholder="Write your message..."
+            value={formData.message}
+            onChange={handleChange}
+           required
+           maxLength={5000}
+          className="w-full bg-[#222228] border border-gray-700 rounded-xl px-5 py-4 outline-none"
+         />
 
               <button
-                className="w-full bg-gradient-to-r from-blue-500 to-purple-600 py-4 rounded-xl font-semibold hover:opacity-90 transition"
-              >
-                Send Message 🚀
-              </button>
+              type="submit"
+              disabled={loading}
+          className="w-full bg-gradient-to-r from-blue-500 to-purple-600 py-4 rounded-xl font-semibold hover:opacity-90 transition disabled:opacity-50"
+>
+       {loading ? "Sending..." : "Send Message 🚀"}
+</button>
 
+{status && (
+  <p role="status" aria-live="polite" className="text-sm text-center">
+    {status}
+  </p>
+)}
             </form>
-
           </div>
-
         </div>
-
       </div>
     </section>
   );

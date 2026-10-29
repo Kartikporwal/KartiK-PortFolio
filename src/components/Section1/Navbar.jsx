@@ -15,12 +15,11 @@ const Navbar = () => {
           <span className="text-purple-500">Porwal.dev</span></h1>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-10 bg-[#17171b] px-8 py-4 rounded-full font-bold">
+        <div className="hidden md:flex items-center gap-10 bg-[#17171b] px-8 py-4 rounded-full font-bold border border-white">
           <a href="#home" className="text-white hover:text-pink-400">Home</a>
           <a href="#about" className="text-white hover:text-pink-400">About</a>
           <a href="#skills" className="text-white hover:text-pink-400">Skills</a>
           <a href="#projects" className="text-white hover:text-pink-400">Projects</a>
-          <a href="#blogs" className="text-white hover:text-pink-400">Blogs</a>
           <a href="#contact" className="text-white hover:text-pink-400">Contact</a>
         </div>
 
