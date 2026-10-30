@@ -5,7 +5,7 @@ import Page1Content from './Page1Content'
 
 const Section1 = () => {
   return (
-    <div className=''>
+    <div>
         <Navbar /> 
         <Page1Content />
     </div>

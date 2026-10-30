@@ -4,7 +4,7 @@ import Content from './Content'
 
 const Page1Content = () => {
   return (
-    <div className='py-25'>
+    <div className='mt-10'>
        <Content />
     </div>
   )
