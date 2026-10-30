@@ -22,9 +22,8 @@ const Project = ({ projects = [] }) => {
           </p>
         </div>
 
-        {/* Vertical Project Layout */}
+     
         <div className="flex flex-col gap-8">
-
           {projects.map((project, index) => (
             <div
               key={index}
@@ -35,11 +34,11 @@ const Project = ({ projects = [] }) => {
             >
 
               {/* Project Image */}
-              <div className="w-full md:w-64 shrink-0">
+              <div className="w-full md:w-65 shrink-0">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-52 md:h-full min-h-48
+                  className="w-full md:h-full 
                   object-cover rounded-xl"
                 />
               </div>
