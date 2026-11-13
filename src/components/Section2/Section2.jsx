@@ -3,7 +3,7 @@ import Page2Content from './Page2Content'
 
 const Section2 = () => {
   return (
-    <div className=' w-full'>
+    <div className='w-full'>
       <Page2Content />
     </div>
   )

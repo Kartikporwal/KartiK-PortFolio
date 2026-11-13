@@ -6,7 +6,7 @@ import Page1Content from './Page1Content';
 
 const Section1 = () => {
   return (
-    <div className="w-full min-h-screen bg-black overflow-x-hidden">
+    <div className="w-full">
       <Navbar />
       <Page1Content />
 

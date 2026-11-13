@@ -4,7 +4,7 @@ import Content from './Content';
 
 const Page1Content = () => {
   return (
-    <div className="w-full">
+    <div className="">
       <Content />
     </div>
   );
