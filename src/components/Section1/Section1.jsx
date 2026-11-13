@@ -1,15 +1,18 @@
-import React from 'react'
 
-import Navbar from './Navbar'
-import Page1Content from './Page1Content'
+import React from 'react';
+
+import Navbar from './Navbar';
+import Page1Content from './Page1Content';
 
 const Section1 = () => {
   return (
-    <div>
-        <Navbar /> 
-        <Page1Content />
-    </div>
-  )
-}
+    <div className="w-full min-h-screen bg-black overflow-x-hidden">
+      <Navbar />
+      <Page1Content />
 
-export default Section1
+    </div>
+  );
+};
+
+export default Section1;
+
