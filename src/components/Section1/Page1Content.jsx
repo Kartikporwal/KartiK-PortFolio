@@ -1,13 +1,14 @@
-import React from 'react'
 
-import Content from './Content'
+import React from 'react';
+import Content from './Content';
 
 const Page1Content = () => {
   return (
-    <div className='py-20'>
-       <Content />
+    <div className="w-full">
+      <Content />
     </div>
-  )
-}
+  );
+};
 
-export default Page1Content
+export default Page1Content;
+
